@@ -23,18 +23,49 @@ div#encloser h1 {
 width: 1024px;
 height: 232px;
 }
+
 div#encloser h1 a {
 display: block;
 width: inherit;
 height: inherit;
 background-image: url(<%= asset_path 'logo.png' %>);
 }
+
+
 div#encloser h1 a:hover {
 display: block;
 width: inherit;
 height: inherit;
 background-image: url(<%= asset_path 'logo_hover.png' %>);
 }
+
+
+
+#basebround{
+width: 1024px;
+height: 232px;
+background: url(<%= asset_path 'rails.png' %>) repeat 30% 30%;
+z-index: 100;
+}
+
+#midground{
+width: 1024px;
+height: 232px;
+background: url(<%= asset_path 'midground.png' %>) repeat 80% 80%;
+z-index: 100;
+}
+#foreground{
+width: 1024px;
+height: 232px;
+background: url(<%= asset_path 'foreground.png' %>) repeat 90% 110%;
+z-index: 200;
+}
+
+
+
+
+
+
 
 div#encloser ul#nav {
 width: inherit;
@@ -168,3 +199,5 @@ margin-top: 30px;
 padding: 40px 30px;
 color: #ddd;
 }
+
+

@@ -9,6 +9,27 @@
 
         <%= stylesheet_link_tag    "application", :media => "all" %>
         <%= javascript_include_tag "application" %>
+<script type="text/javascript">
+    $(function(){
+
+            $('#baseground').css({backgroundPosition: '0px 0px'});
+            $('#foreground').css({backgroundPosition: '0px 0px'});
+            $('#midground').css({backgroundPosition: '0px 0px'});
+
+            $('#baseground').animate({
+backgroundPosition:"(0px -10000px)"
+}, 320000, 'linear');
+
+            $('#foreground').animate({
+backgroundPosition:"(0px -10000px)"
+}, 120000, 'linear');
+
+            $('#midground').animate({
+backgroundPosition:"(0px -10000px)"
+}, 180000, 'linear');
+
+            });
+        </script>
         <%= csrf_meta_tags %>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,8 +37,8 @@
         <title>アナテマ・フィジクス</title>
         <!link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />  
         <!link rel="stylesheet" type="text/css" href="css/test.css" media="screen" />  
-        <!script type="text/javascript" src="js/jquery.js"></script>  
-    <!script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>  
+        <!script type="text/javascript" src="js/jquery.js"><!/script>  
+    <!script type="text/javascript" src="js/jquery.lightbox-0.5.js"><!/script>  
 <script type="text/javascript">
     $(function () {
             $('#gallery a').lightBox();
@@ -66,16 +87,23 @@
 
     <div id="encloser">
 
-        <h1><a href="./apindex.html"><span>アナテマ・フィジクス</span></a></h1>
-
+        <div align="center">
+            <div id="foreground">
+                <div id="baseground">
+                    <div id="midground">
+                        <h1><a href="/"></a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         <ul id="nav">
-            <li id="story"><a href="./apstory.html"><span>ストーリー</span></a></li>
-            <li id="person"><a href="./apcharacter.html"><span>登場人物</span></a></li>
-            <li id="picture"><a href="./appicture.html"><span>ギャラリー</span></a></li>
-            <li id="staff"><a href="./apstaff.html"><span>スタッフ</span></a></li>
-            <li id="demo"><a href="./apdownload.html"><span>体験版</span></a></li>
-            <li id="extra"><a href="./apomake.html"><span>おまけ</span></a></li>
-            <li id="link"><a href="./link.html"><span>リンク</span></a></li>
+            <li id="story"><a href="/story"><span>ストーリー</span></a></li>
+            <li id="person"><a href="/characters"><span>登場人物</span></a></li>
+            <li id="picture"><a href="/pictures"><span>ギャラリー</span></a></li>
+            <li id="staff"><a href="/staff"><span>スタッフ</span></a></li>
+            <li id="demo"><a href="/demo"><span>体験版</span></a></li>
+            <li id="extra"><a href="/omake"><span>おまけ</span></a></li>
+            <li id="link"><a href="http://higashinoterakoya.herokuapp.com/links"><span>リンク</span></a></li>
         </ul>
         <hr>
 
@@ -87,37 +115,7 @@
                 <ul>
                     <li>
 
-                    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-                    <script>
-                        new TWTR.Widget({
-                            version: 2,
-                            type: 'profile',
-                            rpp: 2,
-                            interval: 6000,
-                            width: 250,
-                            height: 50,
-                            theme: {
-                                shell: {
-                                    background: 'transparent',
-                                    color: '#ffffff'
-                                },
-                                tweets: {
-                                    background: 'transparent',
-                                    color: '#ffffff',
-                                    links: '#4aed05'
-                                }
-                            },
-                            features: {
-                                scrollbar: false,
-                                loop: false,
-                                live: false,
-                                hashtags: true,
-                                timestamp: true,
-                                avatars: false,
-                                behavior: 'all'
-                            }
-                        }).render().setUser('AnathemaPhysics').start();
-                    </script>　</li>
+                    </li>
                     <li><strong>公式ブログ<br><a href="http://anathemaphysics.hatenablog.com/" target="_blank">「アナテマ・フィジクス制作日誌」</a><br><br></strong>
                     <a href="http://anathemaphysics.hatenablog.com/" target="_blank">
                         <img alt="ブログへのバナー" longdesc="ブログへのバナー" src="image/blogbanner4.png" class="auto-style1"></a></li>
@@ -129,7 +127,6 @@
                     </li>
                     <li>
                     <a href="https://twitter.com/share" class="twitter-share-button" data-text="同人ノベルゲーム「アナテマ・フィジクス」" data-via="AnathemaPhysics" data-lang="ja" data-size="large" data-hashtags="AnathemaPhysics">Tweet</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     <br>
                     <div class="fb-like" data-href="http://easternretroschool.web.fc2.com/apindex.html" data-send="true" data-width="250" data-show-faces="true"></div>
                     <br>

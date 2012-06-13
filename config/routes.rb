@@ -1,10 +1,22 @@
 AnathemaPhysics::Application.routes.draw do
+  get "story/index"
+  get "characters/index"
+  get "demo/index"
+  get "omake/index"
+  get "pictures/index"
+
   get "contents/index"
 
   get "contents/story"
 
   get "contents/character"
 
+  resources :contents
+  resources :story
+  resources :characters
+  resources :omake
+  resources :demo
+  resources :pictures
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,2 @@
+module OmakeHelper
+end
