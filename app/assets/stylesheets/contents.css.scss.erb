@@ -1,0 +1,170 @@
+// Place all the styles related to the contents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+padding: 0px;
+margin: 0px;
+}
+
+body {
+background-image: url(<%= asset_path 'body_back.png' %>);
+background-position: center center;
+background-repeat: repeat;
+}
+
+span {display: none;}
+
+div#encloser {
+width: 1024px;
+margin: auto;
+}
+
+div#encloser h1 {
+width: 1024px;
+height: 232px;
+}
+div#encloser h1 a {
+display: block;
+width: inherit;
+height: inherit;
+background-image: url(<%= asset_path 'logo.png' %>);
+}
+div#encloser h1 a:hover {
+display: block;
+width: inherit;
+height: inherit;
+background-image: url(<%= asset_path 'logo_hover.png' %>);
+}
+
+div#encloser ul#nav {
+width: inherit;
+height: 90px;
+text-align: left;}
+
+div#encloser ul#nav li{
+float: left;
+height: inherit;
+}
+
+div#encloser ul#nav li a {
+display: block;
+width: inherit;
+height: inherit;
+}
+
+div#encloser ul#nav li {height: inherit;}
+div#encloser ul#nav li#story {width: 153px;}
+div#encloser ul#nav li#story_f {width: 153px; background-image: url(<%= asset_path 'nav_story_active.png' %>);}
+div#encloser ul#nav li#person {width: 143px;}
+div#encloser ul#nav li#person_f {width: 143px; background-image: url(<%= asset_path 'nav_person_active.png' %>);}
+div#encloser ul#nav li#picture,
+div#encloser ul#nav li#extra {width: 145px;}
+div#encloser ul#nav li#picture_f {width: 145px; background-image: url(<%= asset_path 'nav_picture_active.png' %>);}
+div#encloser ul#nav li#extra_f {width: 145px; background-image: url(<%= asset_path 'nav_extra_active.png' %>);}
+div#encloser ul#nav li#staff {width: 142px;}
+div#encloser ul#nav li#staff_f {width: 142px; background-image: url(<%= asset_path 'nav_staff_active.png' %>);}
+div#encloser ul#nav li#demo {width: 144px;}
+div#encloser ul#nav li#demo_f {width: 144px; background-image: url(<%= asset_path 'nav_demo_active.png' %>);}
+div#encloser ul#nav li#link {width: 152px;}
+div#encloser ul#nav li#link_f {width: 152px; background-image: url(<%= asset_path 'nav_link_active.png' %>);}
+
+div#encloser ul#nav li#story a {background-image: url(<%= asset_path 'nav_story.png' %>);}
+div#encloser ul#nav li#story a:hover {background-image: url(<%= asset_path 'nav_story_hover.png' %>);}
+div#encloser ul#nav li#story a:active {background-image: url(<%= asset_path 'nav_story_active.png' %>);}
+
+div#encloser ul#nav li#person a {background-image: url(<%= asset_path 'nav_person.png' %>);}
+div#encloser ul#nav li#person a:hover {background-image: url(<%= asset_path 'nav_person_hover.png' %>);}
+div#encloser ul#nav li#person a:active {background-image: url(<%= asset_path 'nav_person_active.png' %>);}
+
+div#encloser ul#nav li#picture a {background-image: url(<%= asset_path 'nav_picture.png' %>);}
+div#encloser ul#nav li#picture a:hover {background-image: url(<%= asset_path 'nav_picture_hover.png' %>);}
+div#encloser ul#nav li#picture a:active {background-image: url(<%= asset_path 'nav_picture_active.png' %>);}
+
+div#encloser ul#nav li#staff a {background-image: url(<%= asset_path 'nav_staff.png' %>);}
+div#encloser ul#nav li#staff a:hover {background-image: url(<%= asset_path 'nav_staff_hover.png' %>);}
+div#encloser ul#nav li#staff a:active {background-image: url(<%= asset_path 'nav_staff_active.png' %>);}
+
+div#encloser ul#nav li#demo a {background-image: url(<%= asset_path 'nav_demo.png' %>);}
+div#encloser ul#nav li#demo a:hover {background-image: url(<%= asset_path 'nav_demo_hover.png' %>);}
+div#encloser ul#nav li#demo a:active {background-image: url(<%= asset_path 'nav_demo_active.png' %>);}
+
+div#encloser ul#nav li#extra a {background-image: url(<%= asset_path 'nav_extra.png' %>);}
+div#encloser ul#nav li#extra a:hover {background-image: url(<%= asset_path 'nav_extra_hover.png' %>);}
+div#encloser ul#nav li#extra a:active {background-image: url(<%= asset_path 'nav_extra_active.png' %>);}
+
+div#encloser ul#nav li#link a {background-image: url(<%= asset_path 'nav_link.png' %>);}
+div#encloser ul#nav li#link a:hover {background-image: url(<%= asset_path 'nav_link_hover.png' %>);}
+div#encloser ul#nav li#link a:active {background-image: url(<%= asset_path 'nav_link_active.png' %>);}
+
+
+div#encloser hr {
+display: none;
+clear: both;}
+
+div#main {
+width: inherit;
+/* margin-top: 322px; */
+height: auto;
+padding-top: 20px;}
+
+div#aside {
+width: 304px;
+height: inherit;
+float: right;}
+
+	div#aside ul {
+	width: inherit;
+	margin-left: auto;}
+	
+		div#aside ul li {
+            background-image: url(<%= asset_path 'aside.png' %>);
+		background-repeat: no-repeat;
+		height: 300px;
+		color: #ddd;
+		list-style-type: none;
+		margin-bottom: 0px;
+		padding: 25px 25px 0px 25px;
+		}
+
+div#content {
+width: 680px;
+margin-right: 304px;
+padding-left: 30px;
+color: #ddd;
+}
+
+	div#content h2 {
+	color: #a1cace;
+	margin: 1em 0em 1.5em 0em;
+	}
+	
+	div#content a {
+	font-size: 0.8em;
+	color: #92c1c6;
+	font-weight: bold;
+	line-height: 3em;
+	padding: 2em;
+	}
+	
+	
+	div#content table {color: white;}	
+	
+	div#content table#picture td {padding: 0px 7px 20px 0px;}
+	div#content table#picture td img {width: 160px; height: 120px;}
+	
+	
+	
+	div#content table#picture a {margin: 0px;padding: 0px;}
+
+
+div#main address {
+clear: both;
+background-image: url(<%= asset_path 'address.png' %>);
+background-position: bottom center;
+background-repeat: no-repeat;
+width: 944px;
+height: 8px;
+margin-top: 30px;
+padding: 40px 30px;
+color: #ddd;
+}
