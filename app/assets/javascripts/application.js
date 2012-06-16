@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require pjax
+//= require jquery.pjax
 //= require_tree .
 //
+jQuery ->
+  $('a').pjax('[data-pjax-container]')
