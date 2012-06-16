@@ -9,6 +9,8 @@
 
         <%= stylesheet_link_tag    "application", :media => "all" %>
         <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+
 <script type="text/javascript">
     $(function(){
 
@@ -17,21 +19,19 @@
             $('#midground').css({backgroundPosition: '0px 0px'});
 
             $('#baseground').animate({
-backgroundPosition:"(0px -10000px)"
+backgroundPosition:"(300px -10000px)"
 }, 320000, 'linear');
 
             $('#foreground').animate({
-backgroundPosition:"(0px -10000px)"
+backgroundPosition:"(1000px -10000px)"
 }, 120000, 'linear');
 
             $('#midground').animate({
-backgroundPosition:"(0px -10000px)"
+backgroundPosition:"(500px -10000px)"
 }, 180000, 'linear');
 
             });
         </script>
-        <%= csrf_meta_tags %>
-
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="content-style-type" content="style/css">
         <title>アナテマ・フィジクス</title>
@@ -39,16 +39,6 @@ backgroundPosition:"(0px -10000px)"
         <!link rel="stylesheet" type="text/css" href="css/test.css" media="screen" />  
         <!script type="text/javascript" src="js/jquery.js"><!/script>  
     <!script type="text/javascript" src="js/jquery.lightbox-0.5.js"><!/script>  
-<script type="text/javascript">
-    $(function () {
-            $('#gallery a').lightBox();
-            });  
-</script>  
-<style type="text/css">
-    .auto-style1 {
-        border-width: 0px;
-    }
-</style>
 <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -103,7 +93,7 @@ backgroundPosition:"(0px -10000px)"
             <li id="staff"><a href="/staff"><span>スタッフ</span></a></li>
             <li id="demo"><a href="/demo"><span>体験版</span></a></li>
             <li id="extra"><a href="/omake"><span>おまけ</span></a></li>
-            <li id="link"><a href="http://higashinoterakoya.herokuapp.com/links"><span>リンク</span></a></li>
+            <li id="link"><a href="http://higashinoterakoya.herokuapp.com/links" target="_blank"><span>リンク</span></a></li>
         </ul>
         <hr>
 
@@ -164,4 +154,13 @@ backgroundPosition:"(0px -10000px)"
 </div>
 </div>
 </div>
+<script>
+    jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
+</script>
+<script>
+$('a.gallery').adipoli({
+'startEffect' : 'grayscale',
+'hoverEffect' : 'popout'
+}); 
+</script>
 </body></html>

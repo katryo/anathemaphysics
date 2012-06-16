@@ -1,4 +1,5 @@
 AnathemaPhysics::Application.routes.draw do
+  get "staff/index"
   get "story/index"
   get "characters/index"
   get "demo/index"
@@ -14,6 +15,7 @@ AnathemaPhysics::Application.routes.draw do
   resources :contents
   resources :story
   resources :characters
+  resources :staff
   resources :omake
   resources :demo
   resources :pictures
