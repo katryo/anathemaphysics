@@ -147,7 +147,9 @@ backgroundPosition:"(500px -10000px)"
 </div>
 
 <div id="content">
-    <%= yield %>
+    <div data-pjax-container>
+        <%= yield %>
+    </div>
 </strong>
 </dl>
 </p>
