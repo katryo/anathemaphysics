@@ -17,4 +17,4 @@
 //
 
 jQuery ->
-  $('a').pjax('[data-pjax-container]')
+  $('#nav a').pjax('[data-pjax-container]')
