@@ -1,136 +1,108 @@
-<!-- Update your html tag to include the itemscope and itemtype attributes -->
 <html itemscope itemtype="http://schema.org/Product" lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
-
-    <!-- Add the following three tags inside head -->
-    <meta itemprop="name" content="同人ノベルゲーム「アナテマ・フィジクス」">
-    <meta itemprop="description" content="全年齢対象同人ノベルゲーム「アナテマ・フィジクス」。無人の街に漂着した青年と少女は、怪物「アナテマ」、陸上自衛隊特殊作戦群との戦闘への参加を余儀なくされる。">
-    <meta itemprop="image" content="http://easternretroschool.web.fc2.com/image/mainvisual2.jpg">
     <head>
-
+        <meta itemprop="name" content="同人ノベルゲーム「アナテマ・フィジクス」">
+        <meta itemprop="description" content="全年齢対象同人ノベルゲーム「アナテマ・フィジクス」。無人の街に漂着した青年と少女は、怪物「アナテマ」、陸上自衛隊特殊作戦群との戦闘への参加を余儀なくされる。">
+        <meta itemprop="image" content="http://easternretroschool.web.fc2.com/image/mainvisual2.jpg">
         <%= stylesheet_link_tag    "application", :media => "all" %>
         <%= javascript_include_tag "application" %>
         <%= csrf_meta_tags %>
 
-<script type="text/javascript">
-    $(function(){
-
-            $('#baseground').css({backgroundPosition: '0px 0px'});
-            $('#foreground').css({backgroundPosition: '0px 0px'});
-            $('#midground').css({backgroundPosition: '0px 0px'});
-
-            $('#baseground').animate({
-backgroundPosition:"(300px -10000px)"
-}, 320000, 'linear');
-
-            $('#foreground').animate({
-backgroundPosition:"(1000px -10000px)"
-}, 120000, 'linear');
-
-            $('#midground').animate({
-backgroundPosition:"(500px -10000px)"
-}, 180000, 'linear');
-
-            });
-        </script>
-<script>
-    jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
-</script>
-<script>
+        <script type="text/javascript">
+            $(function(){
+                    $('#baseground').css({backgroundPosition: '0px 0px'});
+                    $('#foreground').css({backgroundPosition: '0px 0px'});
+                    $('#midground').css({backgroundPosition: '0px 0px'});
+                    $('#baseground').animate({backgroundPosition:"(300px -10000px)"}, 320000, 'linear');
+                    $('#foreground').animate({backgroundPosition:"(1000px -10000px)"}, 120000, 'linear');
+                    $('#midground').animate({backgroundPosition:"(500px -10000px)"}, 180000, 'linear');
+                    });
+jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
 $('a.gallery').adipoli({
-'startEffect' : 'grayscale',
-'hoverEffect' : 'popout'
-}); 
-</script>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="content-style-type" content="style/css">
-        <title>アナテマ・フィジクス</title>
-<script type="text/javascript">
+        'startEffect' : 'grayscale',
+        'hoverEffect' : 'popout'
+        }); 
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-style-type" content="style/css">
+    <title>アナテマ・フィジクス</title>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-25653452-1']);
+        _gaq.push(['_trackPageview']);
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-25653452-1']);
-    _gaq.push(['_trackPageview']);
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
 
-    (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
+     </script>
 
-</script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-</head>
+ </head>
 
 
 
-<body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+ <body>
+     <div id="fb-root"></div>
+     <script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div id="encloser">
+     <div id="encloser">
 
-        <div align="center">
-            <div id="foreground">
-                <div id="baseground">
-                    <div id="midground">
-                        <h1><a href="/"></a></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <ul id="nav">
-            <li id="story"><a href="/story"><span>ストーリー</span></a></li>
-            <li id="person"><a href="/characters"><span>登場人物</span></a></li>
-            <li id="picture"><a href="/pictures"><span>ギャラリー</span></a></li>
-            <li id="staff"><a href="/staff"><span>スタッフ</span></a></li>
-            <li id="demo"><a href="/demo"><span>体験版</span></a></li>
-            <li id="extra"><a href="/omake"><span>おまけ</span></a></li>
-            <li id="link"><a href="http://higashinoterakoya.herokuapp.com/links" target="_blank"><span>リンク</span></a></li>
-        </ul>
-        <hr>
+         <div align="center">
+             <div id="foreground">
+                 <div id="baseground">
+                     <div id="midground">
+                         <h1><a href="/"></a></h1>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <ul id="nav">
+             <li id="story"><a href="/story"><span>ストーリー</span></a></li>
+             <li id="person"><a href="/characters"><span>登場人物</span></a></li>
+             <li id="picture"><a href="/pictures"><span>ギャラリー</span></a></li>
+             <li id="staff"><a href="/staff"><span>スタッフ</span></a></li>
+             <li id="demo"><a href="/demo"><span>体験版</span></a></li>
+             <li id="extra"><a href="/omake"><span>おまけ</span></a></li>
+             <li id="link"><a href="http://higashinoterakoya.herokuapp.com/links" target="_blank"><span>リンク</span></a></li>
+         </ul>
+         <hr>
 
-        <div id="main">
+         <div id="main">
 
 
 
-            <div id="aside">
-                <ul>
-                    <li>
+             <div id="aside">
+                 <ul>
+                     <li>
 
-                    </li>
-                    <li><strong>公式ブログ<br><a href="http://anathemaphysics.hatenablog.com/" target="_blank">「アナテマ・フィジクス制作日誌」</a><br><br></strong>
-                    <a href="http://anathemaphysics.hatenablog.com/" target="_blank">
-                        <img alt="ブログへのバナー" longdesc="ブログへのバナー" src="image/blogbanner4.png" class="auto-style1"></a></li>
-                    <li>
-                    アナテマ・フィジクス体験版をこちらのサイトから無料ダウンロードできます。<br>
-                    <a href="http://www.melonbooks.com/index.php?main_page=product_info&amp;products_id=IT0000140064http://www.melonbooks.com/index.php?main_page=product_info&amp;products_id=IT0000140064" target="_blank">
-                        <img alt="メロンブックスへのバナー" longdesc="メロンブックスのバナー" src="http://www.melonbooks.co.jp/img/banner.gif"></a>
+                     </li>
+                     <li><strong>公式ブログ<br><a href="http://anathemaphysics.hatenablog.com/" target="_blank">「アナテマ・フィジクス制作日誌」</a><br><br></strong>
+                     <a href="http://anathemaphysics.hatenablog.com/" target="_blank">
+                         <img alt="ブログへのバナー" longdesc="ブログへのバナー" src="image/blogbanner4.png" class="auto-style1"></a></li>
+                     <li>
+                     アナテマ・フィジクス体験版をこちらのサイトから無料ダウンロードできます。<br>
+                     <a href="http://www.melonbooks.com/index.php?main_page=product_info&amp;products_id=IT0000140064http://www.melonbooks.com/index.php?main_page=product_info&amp;products_id=IT0000140064" target="_blank">
+                     </a>
 
-                    </li>
-                    <li>
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="同人ノベルゲーム「アナテマ・フィジクス」" data-via="AnathemaPhysics" data-lang="ja" data-size="large" data-hashtags="AnathemaPhysics">Tweet</a>
-                    <br>
-                    <div class="fb-like" data-href="http://easternretroschool.web.fc2.com/apindex.html" data-send="true" data-width="250" data-show-faces="true"></div>
-                    <br>
-                    <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
-                    <g:plusone size="tall" annotation="inline" width="250"></g:plusone>
+                     </li>
+                     <li>
+                     <a href="https://twitter.com/share" class="twitter-share-button" data-text="同人ノベルゲーム「アナテマ・フィジクス」" data-via="AnathemaPhysics" data-lang="ja" data-size="large" data-hashtags="AnathemaPhysics">Tweet</a>
+                     <br>
+                     <div class="fb-like" data-href="http://easternretroschool.web.fc2.com/apindex.html" data-send="true" data-width="250" data-show-faces="true"></div>
+                     <br>
+                     <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+                     <g:plusone size="tall" annotation="inline" width="250"></g:plusone>
 
-                    <!-- この render 呼び出しを適切な位置に挿入してください -->
-                    <script type="text/javascript">
-                        window.___gcfg = {lang: 'ja'};
+                     <!-- この render 呼び出しを適切な位置に挿入してください -->
+                     <script type="text/javascript">
+                         window.___gcfg = {lang: 'ja'};
 
 (function() {
  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
