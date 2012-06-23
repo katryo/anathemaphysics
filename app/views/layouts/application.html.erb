@@ -6,51 +6,37 @@
         <%= stylesheet_link_tag    "application", :media => "all" %>
         <%= javascript_include_tag "application" %>
         <%= csrf_meta_tags %>
-
         <script type="text/javascript">
             $(function(){
                     $('#baseground').css({backgroundPosition: '0px 0px'});
                     $('#foreground').css({backgroundPosition: '0px 0px'});
                     $('#midground').css({backgroundPosition: '0px 0px'});
-                    $('#baseground').animate({backgroundPosition:"(300px -10000px)"}, 320000, 'linear');
-                    $('#foreground').animate({backgroundPosition:"(1000px -10000px)"}, 120000, 'linear');
-                    $('#midground').animate({backgroundPosition:"(500px -10000px)"}, 180000, 'linear');
+                    $('#baseground').animate({backgroundPosition:"(30000px -1000000px)"}, 32000000, 'linear');
+                    $('#foreground').animate({backgroundPosition:"(100000px -1000000px)"}, 12000000, 'linear');
+                    $('#midground').animate({backgroundPosition:"(50000px -1000000px)"}, 18000000, 'linear');
                     });
-jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
-$('a.gallery').adipoli({
-        'startEffect' : 'grayscale',
-        'hoverEffect' : 'popout'
-        }); 
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="content-style-type" content="style/css">
-    <title>アナテマ・フィジクス</title>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-25653452-1']);
-        _gaq.push(['_trackPageview']);
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="style/css">
+<title>アナテマ・フィジクス</title>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25653452-1']);
+    _gaq.push(['_trackPageview']);
 
-        (function() {
-         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
 
-     </script>
+</script>
 
  </head>
 
 
 
  <body>
-     <div id="fb-root"></div>
-     <script>(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-         fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));</script>
 
      <div id="encloser">
 
@@ -85,7 +71,8 @@ $('a.gallery').adipoli({
                      </li>
                      <li><strong>公式ブログ<br><a href="http://anathemaphysics.hatenablog.com/" target="_blank">「アナテマ・フィジクス制作日誌」</a><br><br></strong>
                      <a href="http://anathemaphysics.hatenablog.com/" target="_blank">
-                         <img alt="ブログへのバナー" longdesc="ブログへのバナー" src="image/blogbanner4.png" class="auto-style1"></a></li>
+                     </a>
+                     </li>
                      <li>
                      アナテマ・フィジクス体験版をこちらのサイトから無料ダウンロードできます。<br>
                      <a href="http://www.melonbooks.com/index.php?main_page=product_info&amp;products_id=IT0000140064http://www.melonbooks.com/index.php?main_page=product_info&amp;products_id=IT0000140064" target="_blank">
@@ -93,10 +80,6 @@ $('a.gallery').adipoli({
 
                      </li>
                      <li>
-                     <a href="https://twitter.com/share" class="twitter-share-button" data-text="同人ノベルゲーム「アナテマ・フィジクス」" data-via="AnathemaPhysics" data-lang="ja" data-size="large" data-hashtags="AnathemaPhysics">Tweet</a>
-                     <br>
-                     <div class="fb-like" data-href="http://easternretroschool.web.fc2.com/apindex.html" data-send="true" data-width="250" data-show-faces="true"></div>
-                     <br>
                      <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
                      <g:plusone size="tall" annotation="inline" width="250"></g:plusone>
 
@@ -124,22 +107,12 @@ $('a.gallery').adipoli({
 </div>
 
 <div id="content">
-    <div data-pjax-container>
-        <%= yield %>
-    </div>
-</strong>
-</dl>
-</p>
+    <%= yield %>
 </div>
 </div>
 </div>
 <script>
-    jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
+    $('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
 </script>
-<script>
-    $('a.gallery').adipoli({
-        'startEffect' : 'grayscale',
-        'hoverEffect' : 'popout'
-    }); 
-</script>
-</body></html>
+</body>
+</html>

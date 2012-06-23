@@ -1,16 +1,24 @@
-
 <h2>ギャラリー</h2>
-<p>
-<%= link_to image_tag("bindnami.jpg", :class => "gallery", :width => 200 ), image_path("bindnami.jpg"), :class => "gallery" %>
-<%= link_to image_tag("Souichim.png", :class => "gallery", :width => 200 ), image_path("Souichim.png"), :class => "gallery" %>
-<%= link_to image_tag("ev26.png", :class => "gallery", :width => 200 ), image_path("ev26.png"), :class => "gallery" %>
-<%= link_to image_tag("tachibanaandyaezaki.png", :class => "gallery", :width => 200 ), image_path("tachibanaandyaezaki.png"), :class => "gallery" %>
-<%= link_to image_tag("epiloguenami.jpg", :class => "gallery", :width => 200 ), image_path("epiloguenami.jpg"), :class => "gallery" %>
-<%= link_to image_tag("woundednami.jpg", :class => "gallery", :width => 200 ), image_path("woundednami.jpg"), :class => "gallery" %>
-<%= link_to image_tag("hand4.jpeg", :class => "gallery", :width => 200 ), image_path("hand4.jpeg"), :class => "gallery" %>
-<%= link_to image_tag("heli.png", :class => "gallery", :width => 200 ), image_path("heli.png"), :class => "gallery" %>
-<%= link_to image_tag("namifire.jpg", :class => "gallery", :width => 200 ), image_path("namifire.jpg"), :class => "gallery" %>
-<%= link_to image_tag("runsoichi.jpg", :class => "gallery", :width => 200 ), image_path("runsoichi.jpg"), :class => "gallery" %>
-<%= link_to image_tag("4trimed.jpg", :class => "gallery", :width => 200 ), image_path("4trimed.jpg"), :class => "gallery" %>
+<div class="gallery">
+    <p>
+<%= link_to image_tag("th_bindnami.jpg", :class => "gallery" ), image_path("bindnami.jpg"), :class => "gallery" %>
+<%= link_to image_tag("th_Souichim.jpg", :class => "gallery" ), image_path("Souichim.png"), :class => "gallery" %>
+<%= link_to image_tag("th_ev26.jpg", :class => "gallery" ), image_path("ev26.png"), :class => "gallery" %>
+<%= link_to image_tag("th_tachibanaandyaezaki.jpg", :class => "gallery" ), image_path("tachibanaandyaezaki.png"), :class => "gallery" %>
+<%= link_to image_tag("th_epiloguenami.jpg", :class => "gallery" ), image_path("epiloguenami.jpg"), :class => "gallery" %>
+<%= link_to image_tag("th_woundednami.jpg", :class => "gallery" ), image_path("woundednami.jpg"), :class => "gallery" %>
+<%= link_to image_tag("th_hand4.jpg", :class => "gallery" ), image_path("hand4.jpeg"), :class => "gallery" %>
+<%= link_to image_tag("th_heli.jpg", :class => "gallery" ), image_path("heli.png"), :class => "gallery" %>
+<%= link_to image_tag("th_namifire.jpg", :class => "gallery" ), image_path("namifire.jpg"), :class => "gallery" %>
+<%= link_to image_tag("th_runsoichi.jpg", :class => "gallery" ), image_path("runsoichi.jpg"), :class => "gallery" %>
+<%= link_to image_tag("th_4trimed.jpg", :class => "gallery" ), image_path("4trimed.jpg"), :class => "gallery" %>
 </p>
-
+</div>
+<script>
+$(function(){
+$('.gallery').adipoli({
+'startEffect':'grayscale',
+'hoverEffect':'popout'
+});
+});
+</script>

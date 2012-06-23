@@ -13,7 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.pjax
+//= require jquery-adipoli
 //= require_tree .
-//
-jQuery ->
-  $('a').pjax('[data-pjax-container]')
