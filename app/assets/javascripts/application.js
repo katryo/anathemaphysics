@@ -15,10 +15,3 @@
 //= require jquery.pjax
 //= require jquery-adipoli
 //= require_tree .
-<<<<<<< HEAD
-=======
-//
-
-jQuery ->
-  $('#nav a').pjax('[data-pjax-container]')
->>>>>>> asylum
